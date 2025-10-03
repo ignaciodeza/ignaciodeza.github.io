@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Deza - Research & Methods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #fafbfc;
+        }
+        .mono { font-family: 'IBM Plex Mono', monospace; }
+        /* Removed .method-card styles for the minimalist look */
+        .headshot-placeholder {
+            border-radius: 50%; /* Makes the container circular */
+            height: 10rem; /* Increased size to 10rem */
+            width: 10rem;  /* Increased size to 10rem */
+            min-width: 10rem; /* Ensures it doesn't shrink */
+            background-color: #e2e8f0; 
+            color: #64748b; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            overflow: hidden;
+            border: 2px solid #3b82f6; /* Added subtle blue border */
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- Header - Responsive Layout -->
+        <header class="mb-12 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8">
+            <!-- Headshot Image (Now 10rem) -->
+            <div class="headshot-placeholder">
+                <!-- Swapped placeholder content for the actual image tag -->
+                <img src="profile_pic.png" class="w-full h-full object-cover" alt="Dr. Deza Profile Photo">
+            </div>
+            
+            <!-- Text Content - Centered on Mobile, Left-aligned on Desktop -->
+            <div class="text-center sm:text-left">
+                <h1 class="text-4xl font-semibold mb-3">Ignacio Deza</h1>
+                <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                    I develop rigorous statistical methods for problems where standard machine learning fails: <strong>sparse data, heavy-tailed noise, and rare critical events</strong>. This methodology works across any complex system.
+                </p>
+                <div class="flex gap-6 text-sm text-gray-600 justify-center sm:justify-start">
+                    <a href="mailto:Ignacio.Deza@uwe.ac.uk" class="hover:text-blue-600">Ignacio.Deza@uwe.ac.uk</a>
+                    <a href="https://github.com/ignaciodeza" class="hover:text-blue-600">@ignaciodeza</a>
+                    <!-- UPDATED: Corrected UWE Research Profile link -->
+                    <a href="https://people.uwe.ac.uk/Person/IgnacioDeza" class="hover:text-blue-600">UWE Research Profile</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Core Approach -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Methodological Approach</h2>
+            <!-- Removed boxes and added simple spacing -->
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-2">When Standard Methods Break</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Most machine learning assumes abundant data, Gaussian noise, and common events. Real industrial systems often violate all three assumptions. My work develops alternatives <strong>grounded in statistical physics</strong> that handle these pathological cases rigorously.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-2">Physics-Based Methods for Non-Physics Problems</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Complex systems theory, non-equilibrium statistical mechanics, and information theory provide powerful frameworks for understanding structure in messy data. These methods transfer remarkably well to subscription markets, maintenance prediction, and any system with many interacting components.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-2">Rapid Domain Absorption</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        A strong theoretical foundation enables quick mastery of domain-specific knowledge. I've moved from climate dynamics to aerospace maintenance to energy forecasting by <strong>recognising</strong> <!-- Changed: recognizing -> recognising -->
+                        <strong>universal patterns</strong> across superficially different problems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Position -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-4">Academic Position</h2>
+            <p class="text-gray-700 mb-2">
+                <span class="font-medium">Senior Lecturer in Data Science, Programme Leader</span><br>
+                <span class="text-gray-600">University of the West of England, Bristol</span>
+            </p>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                I lead the Applied Statistics and Fundamentals of Machine Learning module and contribute to curriculum design for the BSc in Data Science. My teaching <strong>emphasises</strong> <!-- Changed: emphasizes -> emphasises -->
+                rigorous foundations combined with practical problem-solving - the same approach I bring to research and applied work.
+            </p>
+        </section>
+
+        <!-- Problem Classes -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Problem Classes I <strong>Specialise</strong> In</h2>
+            <!-- Changed: Specialize -> Specialise -->
+                        <div class="space-y-5">
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-1">Rare Event Prediction</h3>
+                    <p class="text-sm text-gray-600">
+                        Equipment failures, subscriber defection, extreme weather events - when the outcome you care about is infrequent but critical, standard classification breaks down. Requires careful handling of class imbalance and hybrid statistical-deep learning architectures.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Aerospace maintenance, subscription churn, climate extremes</p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-1">High-Dimensional Sparse Data</h3>
+                    <p class="text-sm text-gray-600">
+                        Many sensors, few measurements. Feature spaces with thousands of dimensions but only dozens of samples. Requires dimensionality reduction methods that preserve physical interpretability and avoid overfitting.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Sensor networks, industrial IoT, medical diagnostics</p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-1">Non-Gaussian, Heavy-Tailed Distributions</h3>
+                    <p class="text-sm text-gray-600">
+                        When your data exhibits power laws, Lévy flights, or other heavy-tailed behavior, Gaussian assumptions produce systematically wrong answers. I develop and implement methods that respect the true statistical structure.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Financial time series, turbulence, network traffic</p>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-1">Complex Network Dynamics</h3>
+                    <p class="text-sm text-gray-600">
+                        Systems where interactions between components matter as much as the components themselves. Requires methods from network science and information theory to extract causal structure from observational data.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Climate teleconnections, supply chains, neural systems</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Open Source Software</h2>
+            <!-- Removed box/bg styles -->
+            <div>
+                <div class="flex items-start justify-between mb-2">
+                    <h3 class="text-lg font-medium">
+                        <a href="https://github.com/ignaciodeza/qNoise" class="text-blue-600 hover:underline mono">qNoise</a>
+                    </h3>
+                    <span class="text-xs text-gray-500 mono">Python</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">
+                    Generator of non-Gaussian <strong>coloured</strong> <!-- Changed: colored -> coloured -->
+                    noise implementing Lévy processes and arbitrary correlation structures. Used internationally for stochastic <strong>modelling</strong>, signal processing, and testing algorithm robustness against realistic noise conditions.
+                </p>
+                <p class="text-xs text-gray-500">
+                    <span class="font-medium">Published:</span> SoftwareX, 2022 • 
+                    <a href="https://doi.org/10.1016/j.softx.2022.101034" class="text-blue-600 hover:underline">DOI:10.1016/j.softx.2022.101034</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Selected Research -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Selected Research</h2>
+                        <div class="space-y-5 text-sm">
+                                <div>
+                    <p class="font-medium text-gray-800 mb-1">
+                        Assessing the direction of climate interactions by means of complex networks and information theoretic tools
+                    </p>
+                    <p class="text-xs text-600 mb-1">J.I. Deza, M. Barreiro, C. Masoller</p>
+                    <p class="text-xs text-gray-500">
+                        Chaos 25(3), 033105 (2015) • 51 citations • 
+                        <a href="https://doi.org/10.1063/1.4914101" class="text-blue-600 hover:underline">DOI</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800 mb-1">
+                        Maintenance automation using deep learning methods: A case study from the aerospace industry
+                    </p>
+                    <p class="text-xs text-gray-600 mb-1">P.J. Mayhew, H. Ihshaish, I. Deza, A. Del Amo</p>
+                    <p class="text-xs text-gray-500">
+                        ICANN 2023 • 
+                        <a href="https://doi.org/10.1007/978-3-031-44204-9_25" class="text-blue-600 hover:underline">DOI</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800 mb-1">
+                        Estimating defection in subscription-type markets with down-sampled representation
+                    </p>
+                    <p class="text-xs text-gray-600 mb-1">M. Roberts, I. Deza, H. Ihshaish, Y. Zhu</p>
+                    <p class="text-xs text-gray-500">Working Paper (2023)</p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800 mb-1">
+                        The nonequilibrium potential today: A short review
+                    </p>
+                    <p class="text-xs text-gray-600 mb-1">H.S. Wio, J.I. Deza, et al.</p>
+                    <p class="text-xs text-gray-500">
+                        Chaos, Solitons & Fractals 165(1), 112778 (2022) • 
+                        <a href="https://doi.org/10.1016/j.chaos.2022.112778" class="text-blue-600 hover:underline">DOI</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800 mb-1">
+                        Wind power ramp characterisation and forecasting using numerical weather prediction and machine learning
+                    </p>
+                    <p class="text-xs text-gray-600 mb-1">H. Ihshaish, I. Deza, R. Sharp</p>
+                    <p class="text-xs text-gray-500">NeurIPS 2021 Workshop: Tackling Climate Change with Machine Learning</p>
+                </div>
+            </div>
+            <p class="text-sm text-gray-500 mt-6">
+                <!-- UPDATED: Corrected UWE Research Profile link -->
+                Complete list: <a href="https://people.uwe.ac.uk/Person/IgnacioDeza" class="text-blue-600 hover:underline">UWE Research Profile</a> • 
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" class="text-blue-600 hover:underline">Google Scholar</a>
+            </p>
+        </section>
+
+        <!-- Education & Training -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Background & Professional Development</h2>
+                        <div class="mb-6">
+                <p class="font-medium text-gray-800">Ph.D. in Statistical Physics</p>
+                <p class="text-sm text-gray-600">Universitat Politècnica de Catalunya, Spain</p>
+                <!-- UPDATED: Added actual completion date -->
+                <p class="text-xs text-gray-500">European Horizon 2020 Fellow • <span class="font-bold text-gray-600">Completed Feb. 2015</span></p>
+            </div>
+            <div>
+                <h3 class="font-medium text-gray-800 mb-3">Training & Knowledge Transfer</h3>
+                <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                    Beyond academic teaching, I work with technical teams on focused professional development: advanced statistical methods, deep learning architectures for non-standard problems, and translating complex methodology into practical implementations.
+                </p>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    My approach <strong>emphasises</strong> <!-- Changed: emphasizes -> emphasises -->
+                    storytelling - making sophisticated technical concepts accessible to mixed audiences including engineers, executives, and domain experts without technical backgrounds.
+                </p>
+            </div>
+        </section>
+
+        <!-- Collaboration -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Collaboration & Contact</h2>
+            <p class="text-sm text-gray-700 leading-relaxed mb-4">
+                I'm interested in working on genuinely difficult data problems - situations where conventional approaches have been tried and failed. If your challenge involves sparse measurements, rare but critical events, heavy-tailed distributions, or complex interacting systems, I may be able to help.
+            </p>
+            <p class="text-sm text-gray-700">
+                Contact: <a href="mailto:Ignacio.Deza@uwe.ac.uk" class="text-blue-600 hover:underline">Ignacio.Deza@uwe.ac.uk</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
