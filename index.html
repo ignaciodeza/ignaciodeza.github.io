@@ -56,34 +56,30 @@
             </div>
         </header>
 
-        <!-- Core Approach -->
-        <section class="mb-12 pb-8 border-b border-gray-200">
+   <section class="mb-12 pb-8 border-b border-gray-200">
             <h2 class="text-2xl font-semibold mb-6">Methodological Approach</h2>
-            <!-- Removed boxes and added simple spacing -->
             <div class="space-y-6">
                 <div>
-                    <h3 class="font-medium text-gray-900 mb-2">When Standard Methods Break</h3>
+                    <h3 class="font-medium text-gray-900 mb-2">Predictive Reliability & Model Stress-Testing</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Most machine learning assumes abundant data, Gaussian noise, and common events. Real industrial systems often violate all three assumptions. My work develops alternatives <strong>grounded in statistical physics</strong> that handle these pathological cases rigorously.
+                        Standard machine learning often assumes abundant data and Gaussian noise. When industrial systems violate these assumptions, models become fragile. My work focuses on <strong>stress-testing predictive architectures</strong> to identify hidden failure modes—such as temporal myopia—and implementing rigorous alternatives grounded in statistical physics.
                     </p>
                 </div>
                 <div>
-                    <h3 class="font-medium text-gray-900 mb-2">Physics-Based Methods for Non-Physics Problems</h3>
+                    <h3 class="font-medium text-gray-900 mb-2">Physics-Grounded Data Science</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        Complex systems theory, non-equilibrium statistical mechanics, and information theory provide powerful frameworks for understanding structure in messy data. These methods transfer remarkably well to subscription markets, maintenance prediction, and any system with many interacting components.
+                        Complex systems theory and non-equilibrium statistical mechanics provide the tools to extract signal from "pathological" residuals. These methods are essential for subscription markets, aerospace maintenance, and any high-stakes environment where the cost of a false assumption is prohibitive.
                     </p>
                 </div>
                 <div>
                     <h3 class="font-medium text-gray-900 mb-2">Rapid Domain Absorption</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
-                        A strong theoretical foundation enables quick mastery of domain-specific knowledge. I've moved from climate dynamics to aerospace maintenance to energy forecasting by <strong>recognising</strong> <!-- Changed: recognizing -> recognising -->
-                        <strong>universal patterns</strong> across superficially different problems.
+                        By recognising universal patterns across different scales, I have moved from climate dynamics to energy forecasting and aerospace. A strong theoretical foundation allows for the quick mastery of domain-specific challenges through the lens of structural data patterns.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Current Position -->
         <section class="mb-12 pb-8 border-b border-gray-200">
             <h2 class="text-2xl font-semibold mb-4">Academic Position</h2>
             <p class="text-gray-700 mb-2">
@@ -91,156 +87,74 @@
                 <span class="text-gray-600">University of the West of England, Bristol</span>
             </p>
             <p class="text-sm text-gray-600 leading-relaxed">
-                I lead the Applied Statistics and Fundamentals of Machine Learning module and contribute to curriculum design for the BSc in Data Science. My teaching <strong>emphasises</strong> <!-- Changed: emphasizes -> emphasises -->
-                rigorous foundations combined with practical problem-solving - the same approach I bring to research and applied work.
+                I lead the Applied Statistics and Fundamentals of Machine Learning module and drive the BSc Data Science curriculum. My focus is on ensuring rigorous theoretical foundations are met with practical, industry-led problem-solving.
             </p>
         </section>
 
-        <!-- Problem Classes -->
         <section class="mb-12 pb-8 border-b border-gray-200">
-            <h2 class="text-2xl font-semibold mb-6">Problem Classes I <strong>Specialise</strong> In</h2>
-            <!-- Changed: Specialize -> Specialise -->
-                        <div class="space-y-5">
+            <h2 class="text-2xl font-semibold mb-6">Industrial Problem Classes</h2>
+            <div class="space-y-5">
                 <div>
-                    <h3 class="font-medium text-gray-900 mb-1">Rare Event Prediction</h3>
+                    <h3 class="font-medium text-gray-900 mb-1">Rare Event & Extreme Risk Forecasting</h3>
                     <p class="text-sm text-gray-600">
-                        Equipment failures, subscriber defection, extreme weather events - when the outcome you care about is infrequent but critical, standard classification breaks down. Requires careful handling of class imbalance and hybrid statistical-deep learning architectures.
+                        When outcomes are infrequent but critical—such as equipment failure or rapid subscriber churn—standard classification models systematically under-evaluate risk. I develop architectures that respect true class imbalance.
                     </p>
-                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Aerospace maintenance, subscription churn, climate extremes</p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Aerospace maintenance, subscription markets, climate extremes</p>
                 </div>
                 <div>
-                    <h3 class="font-medium text-gray-900 mb-1">High-Dimensional Sparse Data</h3>
+                    <h3 class="font-medium text-gray-900 mb-1">Low-Sample & Sparse Data Modelling</h3>
                     <p class="text-sm text-gray-600">
-                        Many sensors, few measurements. Feature spaces with thousands of dimensions but only dozens of samples. Requires dimensionality reduction methods that preserve physical interpretability and avoid overfitting.
+                        Building reliable predictive systems for feature spaces with thousands of dimensions but limited samples. This requires dimensionality reduction that maintains physical interpretability while avoiding overfitting.
                     </p>
-                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Sensor networks, industrial IoT, medical diagnostics</p>
+                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Industrial IoT, medical diagnostics, sensor networks</p>
                 </div>
                 <div>
-                    <h3 class="font-medium text-gray-900 mb-1">Non-Gaussian, Heavy-Tailed Distributions</h3>
+                    <h3 class="font-medium text-gray-900 mb-1">Non-Gaussian & Heavy-Tailed Risk</h3>
                     <p class="text-sm text-gray-600">
-                        When your data exhibits power laws, Lévy flights, or other heavy-tailed behavior, Gaussian assumptions produce systematically wrong answers. I develop and implement methods that respect the true statistical structure.
+                        Standard models fail when data exhibits power laws or Lévy flights. I implement methods that account for the heavy-tailed behaviour where actual commercial risk typically resides.
                     </p>
                     <p class="text-xs text-gray-500 mt-1 mono">Applications: Financial time series, turbulence, network traffic</p>
-                </div>
-                <div>
-                    <h3 class="font-medium text-gray-900 mb-1">Complex Network Dynamics</h3>
-                    <p class="text-sm text-gray-600">
-                        Systems where interactions between components matter as much as the components themselves. Requires methods from network science and information theory to extract causal structure from observational data.
-                    </p>
-                    <p class="text-xs text-gray-500 mt-1 mono">Applications: Climate teleconnections, supply chains, neural systems</p>
                 </div>
             </div>
         </section>
 
-        <!-- Software -->
+        <section class="mb-12 pb-8 border-b border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6">Methodological Insights</h2>
+            <p class="text-sm text-gray-600 mb-4">
+                Analysis and case studies on predictive reliability, model failure diagnostics, and the societal impact of data structures.
+            </p>
+            <a href="blog.html" class="text-blue-600 hover:underline font-medium">View Methodology Blog & Case Studies &rarr;</a>
+        </section>
+
         <section class="mb-12 pb-8 border-b border-gray-200">
             <h2 class="text-2xl font-semibold mb-6">Open Source Software</h2>
-            <!-- Removed box/bg styles -->
             <div>
                 <div class="flex items-start justify-between mb-2">
                     <h3 class="text-lg font-medium">
-                        <a href="https://github.com/deza/qNoise" class="text-blue-600 hover:underline mono">qNoise</a>
+                        <a href="https://github.com/ignaciodeza/qNoise" class="text-blue-600 hover:underline mono">qNoise</a>
                     </h3>
                     <span class="text-xs text-gray-500 mono">Python</span>
                 </div>
                 <p class="text-gray-600 text-sm mb-3">
-                    Generator of non-Gaussian <strong>coloured</strong> <!-- Changed: colored -> coloured -->
-                    noise implementing Lévy processes and arbitrary correlation structures. Used internationally for stochastic <strong>modelling</strong>, signal processing, and testing algorithm robustness against realistic noise conditions.
+                    Generator of non-Gaussian coloured noise used for stochastic modelling and stress-testing algorithm robustness. 
                 </p>
-                <p class="text-xs text-gray-500">
-                    <span class="font-medium">Published:</span> SoftwareX, 2022 • 
-                    <a href="https://doi.org/10.1016/j.softx.2022.101034" class="text-blue-600 hover:underline">DOI:10.1016/j.softx.2022.101034</a>
-                </p>
+                <div class="flex space-x-4 text-xs">
+                    <a href="https://ignaciodeza.github.io/qNoiseDemo" class="text-blue-600 hover:underline font-medium">Interactive Demo</a>
+                    <a href="https://doi.org/10.1016/j.softx.2022.101034" class="text-gray-500 hover:underline">SoftwareX Publication (2022)</a>
+                </div>
             </div>
         </section>
 
-        <!-- Selected Research -->
-        <section class="mb-12 pb-8 border-b border-gray-200">
-            <h2 class="text-2xl font-semibold mb-6">Selected Research</h2>
-                        <div class="space-y-5 text-sm">
-                                <div>
-                    <p class="font-medium text-gray-800 mb-1">
-                        Assessing the direction of climate interactions by means of complex networks and information theoretic tools
-                    </p>
-                    <p class="text-xs text-600 mb-1">J.I. Deza, M. Barreiro, C. Masoller</p>
-                    <p class="text-xs text-gray-500">
-                        Chaos 25(3), 033105 (2015) • 51 citations • 
-                        <a href="https://doi.org/10.1063/1.4914101" class="text-blue-600 hover:underline">DOI</a>
-                    </p>
-                </div>
-                <div>
-                    <p class="font-medium text-gray-800 mb-1">
-                        Maintenance automation using deep learning methods: A case study from the aerospace industry
-                    </p>
-                    <p class="text-xs text-gray-600 mb-1">P.J. Mayhew, H. Ihshaish, I. Deza, A. Del Amo</p>
-                    <p class="text-xs text-gray-500">
-                        ICANN 2023 • 
-                        <a href="https://doi.org/10.1007/978-3-031-44204-9_25" class="text-blue-600 hover:underline">DOI</a>
-                    </p>
-                </div>
-                <div>
-                    <p class="font-medium text-gray-800 mb-1">
-                        Estimating defection in subscription-type markets with down-sampled representation
-                    </p>
-                    <p class="text-xs text-gray-600 mb-1">M. Roberts, I. Deza, H. Ihshaish, Y. Zhu</p>
-                    <p class="text-xs text-gray-500">Working Paper (2023)</p>
-                </div>
-                <div>
-                    <p class="font-medium text-gray-800 mb-1">
-                        The nonequilibrium potential today: A short review
-                    </p>
-                    <p class="text-xs text-gray-600 mb-1">H.S. Wio, J.I. Deza, et al.</p>
-                    <p class="text-xs text-gray-500">
-                        Chaos, Solitons & Fractals 165(1), 112778 (2022) • 
-                        <a href="https://doi.org/10.1016/j.chaos.2022.112778" class="text-blue-600 hover:underline">DOI</a>
-                    </p>
-                </div>
-                <div>
-                    <p class="font-medium text-gray-800 mb-1">
-                        Wind power ramp characterisation and forecasting using numerical weather prediction and machine learning
-                    </p>
-                    <p class="text-xs text-gray-600 mb-1">H. Ihshaish, I. Deza, R. Sharp</p>
-                    <p class="text-xs text-gray-500">NeurIPS 2021 Workshop: Tackling Climate Change with Machine Learning</p>
-                </div>
-            </div>
-            <p class="text-sm text-gray-500 mt-6">
-                <!-- UPDATED: Corrected UWE Research Profile link -->
-                Complete list: <a href="https://people.uwe.ac.uk/Person/Deza" class="text-blue-600 hover:underline">UWE Research Profile</a> • 
-                <a href="https://scholar.google.com/citations?user=YOUR_ID" class="text-blue-600 hover:underline">Google Scholar</a>
-            </p>
-        </section>
-
-        <!-- Education & Training -->
-        <section class="mb-12 pb-8 border-b border-gray-200">
-            <h2 class="text-2xl font-semibold mb-6">Background & Professional Development</h2>
-                        <div class="mb-6">
-                <p class="font-medium text-gray-800">Ph.D. in Statistical Physics</p>
-                <p class="text-sm text-gray-600">Universitat Politècnica de Catalunya, Spain</p>
-                <!-- UPDATED: Added actual completion date -->
-                <p class="text-xs text-gray-500">European Horizon 2020 Fellow • <span class="font-bold text-gray-600">Completed Feb. 2015</span></p>
-            </div>
-            <div>
-                <h3 class="font-medium text-gray-800 mb-3">Training & Knowledge Transfer</h3>
-                <p class="text-sm text-gray-600 leading-relaxed mb-3">
-                    Beyond academic teaching, I work with technical teams on focused professional development: advanced statistical methods, deep learning architectures for non-standard problems, and translating complex methodology into practical implementations.
-                </p>
-                <p class="text-sm text-gray-600 leading-relaxed">
-                    My approach <strong>emphasises</strong> <!-- Changed: emphasizes -> emphasises -->
-                    storytelling - making sophisticated technical concepts accessible to mixed audiences including engineers, executives, and domain experts without technical backgrounds.
-                </p>
-            </div>
-        </section>
-
-        <!-- Collaboration -->
         <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Collaboration & Contact</h2>
+            <h2 class="text-2xl font-semibold mb-4">Technical Advisory & Contact</h2>
             <p class="text-sm text-gray-700 leading-relaxed mb-4">
-                I'm interested in working on genuinely difficult data problems - situations where conventional approaches have been tried and failed. If your challenge involves sparse measurements, rare but critical events, heavy-tailed distributions, or complex interacting systems, I may be able to help.
+                I engage with industrial partners on high-stakes data problems—situations where conventional approaches have failed to deliver reliability. My focus is on providing <strong>methodological audits and bespoke stress-testing</strong> for predictive pipelines.
             </p>
             <p class="text-sm text-gray-700">
-                Contact: <a href="mailto:Ignacio.Deza@uwe.ac.uk" class="text-blue-600 hover:underline">Ignacio.Deza@uwe.ac.uk</a>
+                For academic collaboration or private technical advisory: 
+                <a href="mailto:Ignacio.Deza@uwe.ac.uk" class="text-blue-600 hover:underline ml-1">Ignacio.Deza@uwe.ac.uk</a> or 
+                <a href="https://www.linkedin.com/in/ignaciodeza/" class="text-blue-600 hover:underline ml-1">LinkedIn</a>
             </p>
         </section>
-    </div>
 </body>
 </html>
