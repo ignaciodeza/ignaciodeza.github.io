@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Technical Insights - Dr. Ignacio Deza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #fafbfc;
+        }
+        .mono { font-family: 'IBM Plex Mono', monospace; }
+        .blog-card:hover {
+            border-color: #3b82f6;
+            transition: border-color 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        
+        <nav class="mb-12">
+            <a href="index.html" class="text-sm font-medium text-blue-600 hover:underline">← Back to Profile</a>
+        </nav>
+
+        <header class="mb-16">
+            <h1 class="text-4xl font-semibold mb-4">Methodological Insights</h1>
+            <p class="text-xl text-gray-700 leading-relaxed max-w-2xl">
+                Technical breakdowns of model failure, stochastic stress-testing, and the application of statistical physics to industrial data problems.
+            </p>
+        </header>
+
+        <main class="space-y-12">
+
+            <article class="blog-card border-l-4 border-blue-500 bg-white p-8 shadow-sm rounded-r-lg">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider mono">Case Study</span>
+                    <span class="text-xs text-gray-400 mono">Feb 2026</span>
+                </div>
+                <h2 class="text-2xl font-semibold mb-3">Why 90% Accuracy is Often a Symptom of Model Failure</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    High AUC and accuracy metrics can mask structural flaws like temporal myopia or severe class imbalance. This breakdown explores how to use non-Gaussian null hypotheses to identify when a model is simply "memorising" noise rather than extracting signal.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm font-medium text-gray-400 italic">Coming soon on Medium</span>
+                    </div>
+            </article>
+
+            <article class="blog-card border-l-4 border-gray-200 bg-white p-8 shadow-sm rounded-r-lg">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider mono">Methodology</span>
+                    <span class="text-xs text-gray-400 mono">Drafting</span>
+                </div>
+                <h2 class="text-2xl font-semibold mb-3 text-gray-800">Causal Discovery in Multi-Scale Time Series</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Standard transfer entropy often fails on complex industrial sensor data. By using symbolic calculus and ordinal patterns, we can assess the directionality of information flow across multiple time scales simultaneously.
+                </p>
+                <div class="text-sm font-medium text-gray-400 italic">Expected publication: March 2026</div>
+            </article>
+
+            <article class="blog-card border-l-4 border-gray-200 bg-white p-8 shadow-sm rounded-r-lg opacity-75">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider mono">Research</span>
+                    <span class="text-xs text-gray-400 mono">Scheduled</span>
+                </div>
+                <h2 class="text-2xl font-semibold mb-3 text-gray-800">The Physics of Pathological Residuals</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    When residuals exhibit power laws or Lévy flights, Gaussian-based stress testing produces systematically wrong answers. A look into why "fat tails" are the primary source of predictive failure in high-stakes environments.
+                </p>
+            </article>
+
+        </main>
+
+        <footer class="mt-24 pt-8 border-t border-gray-200">
+            <p class="text-sm text-gray-500 leading-relaxed mb-4">
+                These insights are part of a broader framework for industrial model stress-testing and technical advisory. 
+            </p>
+            <div class="flex gap-6 text-sm">
+                <a href="mailto:Ignacio.Deza@uwe.ac.uk" class="text-blue-600 hover:underline">Contact for Advisory</a>
+                <a href="https://www.linkedin.com/in/ignaciodeza/" class="text-blue-600 hover:underline">LinkedIn</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
